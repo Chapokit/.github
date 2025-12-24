@@ -1,0 +1,57 @@
+# Template for "Things to Learn"
+name: "Things to Learn"
+description: "Track topics, skills, or concepts you want to learn."
+title: "[LEARN] <Short description of topic>"
+labels: [learning, enhancement]
+body:
+	- type: markdown
+		attributes:
+			value: |
+				## 📚 Things to Learn
+				Use this template to keep track of new topics, skills, or concepts you want to learn.
+
+	- type: input
+		id: topic
+		attributes:
+			label: "Topic/Skill/Concept"
+			description: "What do you want to learn? (e.g., TypeScript, Docker, Data Structures)"
+			placeholder: "Enter the topic or skill here"
+		validations:
+			required: true
+
+	- type: textarea
+		id: why
+		attributes:
+			label: "Why do you want to learn this?"
+			description: "Explain the motivation or goal for learning this topic."
+			placeholder: "E.g., Needed for a project, personal growth, curiosity, etc."
+		validations:
+			required: false
+
+	- type: textarea
+		id: resources
+		attributes:
+			label: "Resources to Use"
+			description: "List any books, courses, articles, or videos you plan to use."
+			placeholder: "E.g., Official docs, YouTube playlist, Udemy course, etc."
+		validations:
+			required: false
+
+	- type: textarea
+		id: plan
+		attributes:
+			label: "Learning Plan / Steps"
+			description: "Outline your plan or steps to learn this topic."
+			placeholder: "E.g., Complete a course, build a project, read documentation, etc."
+		validations:
+			required: false
+
+	- type: checkboxes
+		id: progress
+		attributes:
+			label: "Progress"
+			options:
+				- label: "Started learning"
+				- label: "Completed main resources"
+				- label: "Built a project or did exercises"
+				- label: "Feel confident in this topic"
