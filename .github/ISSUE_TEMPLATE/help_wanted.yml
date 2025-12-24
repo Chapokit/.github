@@ -1,0 +1,61 @@
+name: "🙋‍♂️ Help Wanted"
+description: "Request help with an issue, feature, or area of the project"
+title: "[HELP WANTED] "
+labels: ["help wanted", "good first issue"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🙋‍♂️ Help Wanted
+
+        Thank you for your interest in contributing! Please fill out the following information to describe where help is needed.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary of the Request"
+      description: "A brief summary of what kind of help you're looking for."
+      placeholder: "e.g. Need help implementing a new pagination system for the results page"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context"
+      description: "Explain the context of the issue. Why is this help needed?"
+      placeholder: "e.g. This is blocking other features, or we're understaffed in this area"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Additional Details"
+      description: "Provide any details or links (e.g. code snippets, files, or designs) that might help contributors understand the task."
+      placeholder: "e.g. Related files: /src/components/Pagination.tsx"
+    validations:
+      required: false
+
+  - type: textarea
+    id: skills
+    attributes:
+      label: "Desired Skills"
+      description: "What kind of experience would be helpful (e.g., React, TypeScript, database knowledge)?"
+      placeholder: "e.g. Experience with Express.js and MongoDB"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: "Difficulty Level"
+      description: "Choose the estimated difficulty of this task."
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
